@@ -1,18 +1,20 @@
 import { useEffect } from "react";
 import getBook from "../services/bookApi.js";
 import Header from "../components/layout/Header.jsx";
+import axios from "axios";
 const Home = () => {
   useEffect(() => {
     const fetchBook = async ()=> {
       try {
-        const data = await getBook()
-        console.log(data)
+        const data = await axios.get(`http://localhost:5000/book`)
+        console.log(data.data)
       } catch (error) {
         console.log(error)
       }
     }
    fetchBook();
   }, []);
+  
 
   return (
     <>

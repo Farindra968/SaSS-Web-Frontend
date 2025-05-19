@@ -25,8 +25,8 @@ const TopHeader = () => {
         }
     ]
   return (
-    <section className='border-b-2 border-primary-50'>
-        <div className='max-w-screen-xl  mx-auto flex justify-between  items-center py-3'>
+    <section className='border-b-2 border-primary-50 hidden lg:block'>
+        <div className='max-w-screen-xl  mx-auto flex justify-between  items-center py-3 px-4 xl:px-0'>
         <div className="flex items-center gap-2 space-x-2">
             {data1.slice(0,2).map((item, index)=>(
                 <div key={index} className='flex items-center gap-2 text-sm text-primary-500 font-Poppins-Medium'>
