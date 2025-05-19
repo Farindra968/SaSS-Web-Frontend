@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* Primary - Deep Blue for trust & professionalism */
+  --color-primary-0: #f4f7fc;
+  --color-primary-50: #e6eef9;
+  --color-primary-100: #cdddf2;
+  --color-primary-200: #a8c4ec;
+  --color-primary-300: #7ba4e3;
+  --color-primary-400: #4d86db;
+  --color-primary-500: #2f6fd1;
+  --color-primary-600: #2156aa;
+  --color-primary-700: #1b4588;
+  --color-primary-800: #16376d;
+  --color-primary-900: #112a54;
+  --color-primary-950: #0b1b38;
+
+  /* Secondary - Soft Yellow for warmth & approachability */
+  --color-secondary-0: #fffdf5;
+  --color-secondary-50: #fff8dc;
+  --color-secondary-100: #fff1b8;
+  --color-secondary-200: #ffe88e;
+  --color-secondary-300: #ffdc5a;
+  --color-secondary-400: #ffd42f;
+  --color-secondary-500: #ffc800;
+  --color-secondary-600: #e6b200;
+  --color-secondary-700: #b38900;
+  --color-secondary-800: #8c6900;
+  --color-secondary-900: #6a4f00;
+  --color-secondary-950: #3f2d00;
+
+  /* Accent - Muted Coral for calls to action */
+  --color-accent-0: #fff6f4;
+  --color-accent-50: #ffe9e5;
+  --color-accent-100: #ffcdc4;
+  --color-accent-200: #ffa9a0;
+  --color-accent-300: #ff7f78;
+  --color-accent-400: #ff5b56;
+  --color-accent-500: #ff3a36;
+  --color-accent-600: #e62e2a;
+  --color-accent-700: #b32220;
+  --color-accent-800: #8c1a19;
+  --color-accent-900: #6a1313;
+  --color-accent-950: #400a0a;
+
+  /* Text - Balanced gray shades for readability */
+  --color-text-0: #ffffff;
+  --color-text-50: #f9f9f9;
+  --color-text-100: #f1f1f1;
+  --color-text-200: #dddddd;
+  --color-text-300: #c0c0c0;
+  --color-text-400: #a0a0a0;
+  --color-text-500: #808080;
+  --color-text-600: #606060;
+  --color-text-700: #404040;
+  --color-text-800: #303030;
+  --color-text-900: #202020;
+  --color-text-950: #121212;
+
+  /* Button - Teal tone for action buttons */
+  --color-button-0: #f3faf9;
+  --color-button-50: #d9f0ed;
+  --color-button-100: #b9e4df;
+  --color-button-200: #8dd7cd;
+  --color-button-300: #5cc9b9;
+  --color-button-400: #35bda9;
+  --color-button-500: #00b198;
+  --color-button-600: #009a85;
+  --color-button-700: #007562;
+  --color-button-800: #005a4b;
+  --color-button-900: #004138;
+  --color-button-950: #002923;
+
+  /* fonts */
+  --font-Poppins: "Poppins";
+  --font-Poppins-Medium: "Poppins-Medium";
+  --font-Poppins-Bold: "Poppins-Bold";
+  --font-Poppins-SemiBold: "Poppins-SemiBold";
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:  "Poppins-Medium";
+  src: url('fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url('fonts/Poppins-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url('fonts/Poppins-SemiBold.ttf') format('truetype');
+}
