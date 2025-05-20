@@ -5,7 +5,7 @@ import CategoriesHeader from './CategoriesHeader'
 
 const Header = () => {
   return (
-    <header className='w-full mx-auto'>
+    <header className='w-full z-50 mx-auto'>
         <TopHeader/>
         <MainHeader/>
         <CategoriesHeader/>

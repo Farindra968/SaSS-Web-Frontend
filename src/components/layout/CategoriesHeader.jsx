@@ -8,8 +8,8 @@ const CategoriesHeader = () => {
     setShowCategories(!showCategories);
   };
   return (
-    <section className="w-full ">
-      <div className="max-w-screen-xl mx-auto flex items-center gap-6  py-3 px-4 xl:px-0 relative">
+    <section className="w-full border-b border-primary-50 relative ">
+      <div className="max-w-screen-xl mx-auto flex items-center gap-6  py-3 px-4 xl:px-0 ">
         <button
           onClick={toggleCategories}
           className={`font-Poppins ${
@@ -56,7 +56,7 @@ const CategoriesHeader = () => {
         </div>
       </div>
       {showCategories && (
-        <div className="absolute xl:left-10 container  bg-text-100 h-auto rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  ">
+        <div className="absolute z-50 left-3 xl:left-10 top-14 container  bg-primary-50 h-auto rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  ">
           {categoriesData.map((category, index) => (
             <div key={index}>
               <p className="font-Poppins-SemiBold text-text-700 flex items-center gap-2">

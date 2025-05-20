@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import getBook from "../services/bookApi.js";
-import Header from "../components/layout/Header.jsx";
-import axios from "axios";
+import HeroSection from "../components/HeroSection.jsx";
+
 const Home = () => {
   useEffect(() => {
     const fetchBook = async ()=> {
       try {
-        const data = await axios.get(`http://localhost:5000/book`)
+        const data = await getBook();
         console.log(data.data)
       } catch (error) {
         console.log(error)
@@ -18,8 +18,7 @@ const Home = () => {
 
   return (
     <>
-    <Header/>
-      <h1 className="font-Poppins">Home</h1>
+    <HeroSection/>
     </>
   );
 };
