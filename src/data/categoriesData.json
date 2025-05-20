@@ -1,0 +1,50 @@
+[
+  {
+    "category": "Fiction",
+    "subcategories": [
+      { "name": "Fantasy", "path": "/" },
+      { "name": "Science Fiction", "path": "/" },
+      { "name": "Mystery", "path": "/" },
+      { "name": "Romance", "path": "/" },
+      { "name": "Thriller", "path": "/" },
+      { "name": "Adventure", "path": "/" },
+      { "name": "Historical Fiction", "path": "/" }
+    ]
+  },
+  {
+    "category": "Non-Fiction",
+    "subcategories": [
+      { "name": "Biography", "path": "/" },
+      { "name": "Autobiography", "path": "/" },
+      { "name": "Memoir", "path": "/" },
+      { "name": "True Crime", "path": "/" },
+      { "name": "Travel", "path": "/" },
+      { "name": "Philosophy", "path": "/" },
+      { "name": "Essays", "path": "/" }
+    ]
+  },
+  {
+    "category": "Classic Literature",
+    "subcategories": [
+      { "name": "English Classics", "path": "/" },
+      { "name": "Nepali Classics", "path": "/" },
+      { "name": "Russian Classics", "path": "/" },
+      { "name": "French Classics", "path": "/" },
+      { "name": "Asian Classics", "path": "/" },
+      { "name": "American Classics", "path": "/" },
+      { "name": "World Literature", "path": "/" }
+    ]
+  },
+  {
+    "category": "Short Stories",
+    "subcategories": [
+      { "name": "Nepali Short Stories", "path": "/" },
+      { "name": "English Short Stories", "path": "/" },
+      { "name": "Love Stories", "path": "/" },
+      { "name": "Horror Stories", "path": "/" },
+      { "name": "Twist Endings", "path": "/" },
+      { "name": "Moral Stories", "path": "/" },
+      { "name": "Children’s Stories", "path": "/" }
+    ]
+  }
+]

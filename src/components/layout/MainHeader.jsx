@@ -9,7 +9,7 @@ const MainHeader = () => {
   }
   return (
     <section className="border-b-2 border-primary-50">
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center gap-6 py-4 px-4 xl:px-0">
+      <div className="max-w-screen-xl mx-auto flex justify-between items-center gap-6 py-2 px-4 xl:px-0">
         <div className="w-80">
           <h1 className="font-Poppins-Bold text-xl md:text-2xl text-primary-500">
             BookMart📚
