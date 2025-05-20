@@ -7,4 +7,8 @@ const getBook =async()=>{
     return response.data
 }
 
-export default getBook;
+const getBookById = async (id)=> {
+    const response = await axios.get(`${baseApi}/book/${id}`)
+    return response.data
+}
+export  {getBook, getBookById};

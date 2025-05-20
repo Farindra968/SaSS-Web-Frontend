@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @theme {
   /* Primary - Deep Blue for trust & professionalism */
   --color-primary-0: #f4f7fc;
@@ -70,4 +71,29 @@
   --color-button-800: #005a4b;
   --color-button-900: #004138;
   --color-button-950: #002923;
+
+  /* fonts */
+  --font-Poppins: "Poppins";
+  --font-Poppins-Medium: "Poppins-Medium";
+  --font-Poppins-Bold: "Poppins-Bold";
+  --font-Poppins-SemiBold: "Poppins-SemiBold";
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:  "Poppins-Medium";
+  src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url('/fonts/Poppins-SemiBold.ttf') format('truetype');
 }

@@ -31,24 +31,24 @@ const MainHeader = () => {
           </div>
         </div>
         <div className="lg:w-96 flex justify-center items-center gap-4">
-          <buttom onClick={toggleProfile} className="flex items-center gap-2 font-Poppins-Medium hover:bg-primary-50 rounded-md p-3">
+          <button onClick={toggleProfile} className="flex items-center gap-2 font-Poppins-Medium hover:bg-primary-50 rounded-md p-3">
             <span className="text-primary-400 text-2xl">
               <FaRegUserCircle />
             </span>
             <p className="hidden lg:block text-text-800">Account</p>
-          </buttom>
-          <buttom className="flex items-center gap-2 font-Poppins-Medium hover:bg-primary-50 rounded-md p-3">
+          </button>
+          <button className="flex items-center gap-2 font-Poppins-Medium hover:bg-primary-50 rounded-md p-3">
             <span className="text-primary-400 text-2xl">
               <IoCartOutline />
             </span>
             <p className="hidden lg:block text-text-800">Cart</p>
-          </buttom>
-          <buttom className=" lg:hidden flex items-center gap-2 font-Poppins-Medium hover:bg-primary-50 rounded-md p-3">
+          </button>
+          <button className=" lg:hidden flex items-center gap-2 font-Poppins-Medium hover:bg-primary-50 rounded-md p-3">
             <span className="text-primary-400 text-2xl">
               <IoMenu />
             </span>
 
-          </buttom>
+          </button>
         </div>
       </div>
       {showProfile && (<div className=" absolute right-20 z-10 w-56 divide-y divide-gray-100 overflow-hidden overflow-y-auto rounded-lg bg-white antialiased shadow-md dark:divide-gray-600 dark:bg-gray-700">
