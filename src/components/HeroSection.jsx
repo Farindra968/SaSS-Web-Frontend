@@ -3,6 +3,8 @@ import heroImg from "../assets/images/img/hero_img.png"
 import GridDot from './uI/gridDot'
 import Card from './uI/Card'
 import Heading from './uI/Heading'
+import Buttom from './uI/Buttom'
+import bookData from '../data/bookData'
 
 const HeroSection = () => {
 
@@ -20,9 +22,9 @@ const HeroSection = () => {
                 <p className='font-Poppins text-text-800 text-sm'>
                     Discover thousands of books from every genre — novels, textbooks, children’s books, self-help & more. Dive into stories, explore new worlds, and fuel your knowledge.
                 </p>
-                <div className='py-2'>
-                    <button className='font-Poppins-Medium bg-primary-500 text-white rounded-lg py-2 px-4 hover:bg-primary-600 transition duration-300'>Shop Books</button>
-                    <button className='font-Poppins-Medium bg-primary-100 text-primary-500 rounded-lg py-2 px-4 hover:bg-primary-200 transition duration-300 ml-4'>Browse Categories</button>
+                <div className='py-2 space-x-4'>
+                    <Buttom label="Shop Books" bg="bg-primary-500" text="text-white" hover_bg="bg-primary-600"/>
+                    <Buttom label="Browse Categories" bg="bg-primary-100" text="text-primary-500" hover_bg="bg-primary-200"/>
                 </div>
             </div>
 
@@ -34,7 +36,11 @@ const HeroSection = () => {
         </div>
         <div className='hidden lg:block bg-button-50 rounded-lg p-4 space-y-2'>
             <Heading title="Best Selling"/>
-            <Card/>
+            <div className="grid grid-cols-2 gap-4"> 
+            {bookData?.slice(0, 4).map((book, index)=>(
+            <Card key={index} {...book}/>
+            ))}
+            </div>
 
         </div>
     </section>
