@@ -1,0 +1,1 @@
+export const SINGLEPAGE_ROUTE = '/product'
