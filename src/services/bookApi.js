@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const baseApi = "http://localhost:5000"
+const baseApi = "http://localhost:5000/auth"
 
 const getBook =async()=>{
     const response = await axios.get(`${baseApi}/book`)
