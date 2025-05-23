@@ -11,4 +11,9 @@ const getBookById = async (id)=> {
     const response = await axios.get(`${baseApi}/book/${id}`)
     return response.data
 }
-export  {getBook, getBookById};
+
+const deleteBook = async (id)=>{
+    const response= await axios.delete(`${baseApi}/book/${id}`);
+    return response.data
+}
+export  {getBook, getBookById, deleteBook}; 

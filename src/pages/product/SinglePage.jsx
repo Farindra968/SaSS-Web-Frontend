@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { getBookById } from "../../services/bookApi";
+import { useNavigate, useParams } from "react-router-dom";
+import { deleteBook, getBookById } from "../../services/bookApi";
 import { MdMessage } from "react-icons/md";
 import { BiSolidLike } from "react-icons/bi";
 import AddToCart from "../../components/product/AddToCart";
+import Buttom from "../../components/uI/Buttom";
+import { HOME_ROUTE } from "../../constant/routes";
 
 const SinglePage = () => {
   const { id } = useParams();
   const [getBook, setGetBook] = useState([]);
-  useEffect(() => {
+  const navigate = useNavigate()
+    useEffect(() => {
     const fetchBookbyId = async () => {
       try {
         const response = await getBookById(id);
@@ -20,6 +23,19 @@ const SinglePage = () => {
     fetchBookbyId();
   }, []);
   const { name, author, price, genre, image, description } = getBook;
+
+  // delete book function
+  const deletBook = async (id)=>{
+    try {
+      const response = await deleteBook(id);
+      if (response) {
+        alert("Book Deleted Successfully");
+        navigate(HOME_ROUTE)
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
   return (
     <section className="py-6 flex flex-col lg:flex-row items-start gap-10 px-4 xl:px-0 ">
       <div className="w-full lg:w-[40%] mx-auto">
@@ -114,6 +130,7 @@ const SinglePage = () => {
           </p>
           <div className="flex items-center gap-4">
             <AddToCart />
+              <Buttom onClick={() => deletBook(id)} label="Delete" bg="bg-accent-500" text="text-white" hover_bg="bg-accent-600"/>
           </div>
         </div>
       </div>
