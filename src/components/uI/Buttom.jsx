@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Buttom = ({label, onClick, bg, text, hover_bg}) => {
   return (
